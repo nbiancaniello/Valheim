@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set the destination directory (your Valheim repo)
-REPO_DIR="/c/Users/nicol/OneDrive/Desktop/Valheim Repo"
+REPO_DIR="/c/Users/{usuario}/OneDrive/Desktop/Valheim Repo"
 
 # Change to the repository directory
 cd "$REPO_DIR" || { echo "Directory not found: $REPO_DIR"; exit 1; }
@@ -23,8 +23,8 @@ else
   exit 1
 fi
 
-SOURCE_DIR="/c/Users/nicol/OneDrive/Desktop/Valheim Repo"
-DEST_DIR="/c/Users/nicol/AppData/LocalLow/IronGate/Valheim/worlds_local"
+SOURCE_DIR="/c/Users/{usuario}/OneDrive/Desktop/Valheim Repo"
+DEST_DIR="/c/Users/{usuario}/AppData/LocalLow/IronGate/Valheim/worlds_local"
 
 # Check if the source directory exists
 if [ -d "$SOURCE_DIR" ]; then
