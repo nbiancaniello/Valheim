@@ -1,7 +1,7 @@
 #!/bin/bash
 
-SOURCE_DIR="/c/Users/nicol/AppData/LocalLow/IronGate/Valheim/worlds_local"
-DEST_DIR="/c/Users/nicol/OneDrive/Desktop/Valheim Repo"
+SOURCE_DIR="/c/Users/{usuario}/AppData/LocalLow/IronGate/Valheim/worlds_local"
+DEST_DIR="/c/Users/{usuario}/OneDrive/Desktop/Valheim Repo"
 
 # Check if the source directory exists
 if [ -d "$SOURCE_DIR" ]; then
@@ -27,7 +27,7 @@ cp -r "$SOURCE_DIR"/* "$DEST_DIR"
 echo "Files copied successfully to: $DEST_DIR"
 
 # Set the destination directory (your Valheim repo)
-REPO_DIR="/c/Users/nicol/OneDrive/Desktop/Valheim Repo"
+REPO_DIR="/c/Users/{usuario}/OneDrive/Desktop/Valheim Repo"
 
 # Change to the repository directory
 cd "$REPO_DIR" || { echo "Directory not found: $REPO_DIR"; exit 1; }
